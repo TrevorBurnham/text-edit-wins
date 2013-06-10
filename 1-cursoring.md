@@ -52,12 +52,24 @@ adding this:
 Now `⌃ + ⌥` works with the left and right arrows to move between parts of
 camelCased or underscore_delimited words.
 
-## 4. Jump from page to page
+## 4. (Advanced) Jump from paragraph to paragraph
+
+`⌥ + ↑` and `⌥ + ↓` don't do anything special in OS X. What a waste! You can
+bind those keys in Sublime to jump from one paragraph to another (or more
+precisely, from one blank line to another). This also makes it very easy to
+select entire paragraphs:
+
+    {"keys": ["alt+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false}},
+    {"keys": ["alt+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true}},
+    {"keys": ["shift+alt+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false, "extend": true}},
+    {"keys": ["shift+alt+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true, "extend": true}},
+
+## 5. Jump from page to page
 
 To move the cursor to the previous/next "page," use `Fn + ↑` and `Fn + ↓` on
 your slender `Page Up`/`Page Down`-free Apple keyboard.
 
-## 5. (Advanced) Multi-cursoring
+## 6. (Advanced) Multi-cursoring
 
 In Sublime Text, you can have multiple cursors at the same time. The most
 direct way to create multiple cursors is to `⌘ + click` in each place you want
