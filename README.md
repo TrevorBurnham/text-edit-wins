@@ -40,6 +40,6 @@ First presented as a HubSpot Tech Talk on 2013-06-05.
 
 ## Instructions
 
-1. Clone the repo: https://git.hubteam.com/tburnham/text-edit-wins
+1. Clone the repo: https://github.com/TrevorBurnham/text-edit-wins
 2. Open the project in your favorite text editor
 3. **Remember:** With great power comes great responsibility.
